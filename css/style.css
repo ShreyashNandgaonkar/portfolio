@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.brand-logo {
+    margin-left: 100px;
+    font-family: "Permanent Marker", cursive, sans-serif;
+    cursor: auto;
+}
+
+.nav-wrapper {
+    background-color: #1a535c;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    margin-right: 100px;
+}
+
+.nav-links a:hover {
+    color: rgb(246, 241, 247);
+    transition: 0.5s all;
+    opacity: 0.7;
+}
+
+.heroImg {
+    filter: brightness(30%);
+}
+
+.heroTxt::first-letter {
+    color: #ff6b6b;
+    font-size: larger;
+}
+
+.sidenav {
+    background-color: black;
+}
+
+.sidenav li a {
+    color: white;
+}
+
+.sidenav li a:hover {
+    background-color: #1a535c;
+    color: black;
+}
+
+.slider {
+    background-color: #1a535c;
+}
+
+.pabout {
+    background-color: #1a535c;
+    color: white;
+}
+
+.about-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aboutText {
+    font-size: large;
+    margin-bottom: 20px;
+    margin-left: 20px !important;
+}
+
+.aboutText:before {
+    font-size: 50px;
+    content: "HI!! How's it going?";
+}
+
+.card-content {
+    color: black;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px #1a535c;
+    transition: transform 0.3s;
+}
+
+.slider .indicators .indicator-item {
+    background-color: #ff6b6b;
+}
+
+.card:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px 3px #8ababe;
+}
+
+.card-image img {
+    object-fit: contain;
+}
+
+.pskills {
+    padding-bottom: 10px;
+    background-color: #263238;
+    color: white;
+}
+
+.infotxt {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.projects {
+    background-color: #1a535c;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.project-container {
+    color: black;
+}
+
+.projectImg img {
+    height: 100px;
+    width: 100px;
+}
+
+.project-link {
+    display: inline;
+}
+
+.github-link {
+    display: inline;
+}
+
+img.github-icon {
+    vertical-align: bottom;
+}
+
+a {
+    color: red;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 15px;
+    background-color: #dde1e7;
+    box-shadow: -3px -3px 5px #ffffff70, 3px 3px 15px #000000;
+    transition: transform 0.3s;
+}
+
+.project-box:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #263238;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: transform 0.2s;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+#gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: grey;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #1a535c;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.heart {
+    color: red;
+}
+
+#gotopbtn:hover {
+    background: rgb(165, 159, 159);
+    color: #23575f;
+}
+
+form label {
+    font-size: medium;
+}
+
+form input {
+    color: white;
+}
+
+.sendBtn {
+    padding: 15px;
+    background-color: #1a535c;
+    font-weight: 600;
+    border-color: #1a535c;
+    border-radius: 10px;
+    color: white;
+}
+
+.sendBtn:hover {
+    background-color: #2d646c;
+    color: black;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 990px) {
+    .brand-logo {
+        margin-left: 0px;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .aboutHeader {
+        text-align: center;
+    }
+    .profImage {
+        margin: auto;
+    }
+    .aboutText {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .card {
+        width: 135px;
+    }
+    .card-image img {
+        object-fit: contain;
+        width: 50px;
+    }
+}
